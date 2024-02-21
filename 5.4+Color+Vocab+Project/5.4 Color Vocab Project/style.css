@@ -1,0 +1,24 @@
+*{
+}
+
+.color-tile{
+    font-weight: normal
+}
+#orange{
+    color: orange;
+}
+#blue{
+    color: blue;
+}
+
+#red{
+    color: red;
+}
+#green{
+    color: green;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}

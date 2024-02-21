@@ -1,0 +1,66 @@
+body {
+	background: linear-gradient(270deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.box {
+	width: 42%;
+	line-height: 110%;
+	font-weight: bolder;
+}
+
+button {
+	width: 40%;
+
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column-reverse;
+	}
+
+	.box,
+	.image-box {
+		width: 100%;
+		/* Make both boxes take full width on smaller screens */
+		text-align: center;
+		/* Center the content on smaller screens */
+		margin-top: 6%;
+		/* Reset margin-top for the image box */
+	}
+}
+
+.main {
+	background-color: white;
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+.bg-body-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-secondary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 45% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
